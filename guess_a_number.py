@@ -12,7 +12,7 @@ while True:
     player_number = int(player_input)
 
     if player_number == computer_number:
-        print("Congratulations, you guess it!")
+        print("Congratulations, you guessed it!")
         break
     elif player_number > computer_number:
         print("Your number is too high!")
