@@ -8,13 +8,13 @@ while True:
         player_number = int(player_input)
         if 1 <= player_number <= 100:
             if player_number == computer_number:
-                print("Congratulations, you guessed it!")
+                print(f"Correct!\nI am impressed. Slightly. Don’t let it get to your head.")
                 break
             elif player_number > computer_number:
-                print("Your number is too high!")
+                print("That number has dreams bigger than reality. Try lower.")
             elif player_number < computer_number:
-                print("Your number is too low!")
+                print("Too low. Aim higher. I believe in you. A little.")
         else:
-            print("Number is out of range! Try again...")
+            print(f"Bold choice. Unfortunately, completely out of range.\nTry again...")
     except ValueError:
-        print("Please write a whole number within the specified range. Trying to negotiate will not work here!")
+        print(f"Interesting input. Completely useless, but interesting.\nTry again, this time with a whole number...")
