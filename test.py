@@ -15,3 +15,4 @@ while True:
         print("Please write a whole number within the specified range. Trying to negotiate will not work here!")
 
 print(player_number)
+print(player_number)
