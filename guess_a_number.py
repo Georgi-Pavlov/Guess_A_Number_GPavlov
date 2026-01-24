@@ -58,7 +58,14 @@ while True:
                 break
             print(f"Interesting input. Completely useless, but interesting.\nTry again, this time with a whole number...")
 
-    again = input("Play again? [y / n]: ").lower()
-    if again == "n":
-        print("Game over. Go touch some grass.")
-        break
+    while True:
+        choice = input("Play again? [y / n]: ").lower()
+
+        if choice == "y":
+            print("Let me think of a new number...\n")
+            break
+        elif choice == "n":
+            print("Game over. Go touch some grass.")
+            exit()
+        else:
+            print("You had two options. This was not one of them.")
